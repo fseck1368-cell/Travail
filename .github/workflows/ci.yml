@@ -30,7 +30,7 @@ jobs:
         run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login 
              -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
-       - name: Build de l’image Docker
+      - name: Build de l’image Docker
         run: |
           docker build -t $DOCKER_HUB_REGISTRY/$IMAGE_NAME:$IMAGE_TAG .
         
@@ -38,6 +38,6 @@ jobs:
         run: |
          docker image ls $DOCKER_HUB_REGISTRY/$IMAGE_NAME:$IMAGE_TAG 
 
-     - name: Push de l’image Docker
+      - name: Push de l’image Docker
         run: |
          docker push $DOCKER_HUB_REGISTRY/$IMAGE_NAME:$IMAGE_TAG
