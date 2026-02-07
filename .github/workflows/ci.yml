@@ -7,7 +7,7 @@ on:
 
 jobs:
   docker:
-    runs-on: self-hosted
+    runs-on: suptech_isi
 #   runs-on: ubuntu-latest
 
     #environment: dev
