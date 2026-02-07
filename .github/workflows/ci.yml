@@ -36,7 +36,7 @@ jobs:
 
       - name: Build de l’image Docker
         run: |
-          docker build -t fatouseck98/travaildocker:1.0.1  .
+          docker build -t fatouseck98/travaildocker:1.0.1 .
         
       - name: Test de l’image Docker
         run: |
