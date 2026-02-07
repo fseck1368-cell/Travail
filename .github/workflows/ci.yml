@@ -15,7 +15,7 @@ jobs:
     env:
       IMAGE_NAME: travaildocker
       IMAGE_TAG: 1.0.1
-      DOCKER_HUB_REGISTRY: docker.io/fatouseck98
+      DOCKER_HUB_REGISTRY: fatouseck98
 
     steps:
       - name: Récupération du code
@@ -36,11 +36,11 @@ jobs:
 
       - name: Build de l’image Docker
         run: |
-          docker build -t docker.io/fatouseck98/travaildocker:1.0.1  .
+          docker build -t fatouseck98/travaildocker:1.0.1  .
         
       - name: Test de l’image Docker
         run: |
-        # docker image ls docker.io/fatouseck98/travaildocker:1.0.1 
+        # docker image ls fatouseck98/travaildocker:1.0.1 
           
 
       - name: Push de l’image Docker
